@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maestrohub.com/smprofiles/ProductionStateEnergyConsumption/v1.0",
+  "title": "Production State Energy Consumption",
+  "description": "JSON Schema for capturing energy consumption data associated with specific production states in a manufacturing environment. This schema is designed to help analyze energy usage patterns based on machine states, enabling optimization of energy efficiency during production processes.",
+  "type": "object",
+  "properties": {
+    "Site": {
+      "type": "string",
+      "description": "Name of the manufacturing site or facility"
+    },
+    "Area": {
+      "type": "string",
+      "description": "Production area within the site"
+    },
+    "Line": {
+      "type": "string",
+      "description": "Production line identifier"
+    },
+    "Cell": {
+      "type": "string",
+      "description": "Work cell or station within the line"
+    },
+    "State": {
+      "type": "string",
+      "description": "Current production state (e.g., Running, Idle, Stopped)"
+    },
+    "EnergyReading": {
+      "type": "number",
+      "format": "double",
+      "description": "Cumulative energy meter reading in kWh"
+    },
+    "EnergyConsumption": {
+      "type": "number",
+      "format": "float",
+      "description": "Energy consumed during this state period in kWh"
+    },
+    "StateDuration": {
+      "type": "string",
+      "description": "Duration of the current state (ISO 8601 duration or human-readable)"
+    },
+    "EnergyConsumptionPerMinute": {
+      "type": "number",
+      "format": "float",
+      "description": "Average energy consumption rate in kWh per minute"
+    }
+  },
+  "additionalProperties": false
+}
