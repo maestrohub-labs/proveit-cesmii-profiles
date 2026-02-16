@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://maestrohub.com/smprofiles/ProductionStateEnergyConsumption/v1.0",
+  "$id": "https://github.com/maestrohub-labs/proveit-cesmii-profiles/smprofiles/ProductionStateEnergyConsumption",
   "title": "Production State Energy Consumption",
   "description": "JSON Schema for capturing energy consumption data associated with specific production states in a manufacturing environment. This schema is designed to help analyze energy usage patterns based on machine states, enabling optimization of energy efficiency during production processes.",
   "type": "object",
